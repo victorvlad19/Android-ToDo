@@ -1,0 +1,487 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/InboxTrasparent"/>
+
+    <Button
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/folder_trans"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dock"
+        android:layout_marginLeft="-60dp">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/corner_all_black">
+
+        <!-- Inbox -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20.5dp"
+            android:id="@+id/InboxContainer"
+            android:background="@color/colorVIntelStatusBar">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#fff"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_inbox_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  9  "
+                android:padding="1dp"
+                android:background="@drawable/corner_all"
+                android:textSize="11dp"
+                android:visibility="gone"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top|center"/>
+        </RelativeLayout>
+
+        <!-- Proiecte -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/ProiectContainer"
+            android:background="@color/cororVIntel"
+            android:layout_below="@+id/InboxContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#fff"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_layers_black_24dp"/>
+        </RelativeLayout>
+
+        <!-- Agenda -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/AgendaContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/ProiectContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_today_black_24dp"/>
+        </RelativeLayout>
+
+        <!-- Economii -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/EconomiiContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/AgendaContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_monetization_on_black_24dp"/>
+        </RelativeLayout>
+
+        <!-- Emotional -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/EmotionalContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/EconomiiContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_whatshot_black_24dp"/>
+        </RelativeLayout>
+
+        <!-- Marketing -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/MarketingContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/EmotionalContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_store_black_24dp"/>
+        </RelativeLayout>
+
+        <!-- Prioritati -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/PrioritatiContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/MarketingContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_priority_high_black_24dp"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="2dp"
+                android:textSize="12dp"
+                android:textColor="#747475"
+                android:gravity="bottom|center"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/PrioritatiButton"
+                android:background="@android:color/transparent"
+                style="@android:style/Widget.TextView"
+                android:text="Prioritați" />
+        </RelativeLayout>
+
+        <!-- Cauta -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/CautaContainer"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/PrioritatiContainer"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:tint="#747475"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_search_black_24dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="490dp"
+            android:background="#747475"
+            android:id="@+id/proiect_side">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_centerInParent="false"
+                android:tint="#fff"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_new_message"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="2dp"
+                android:textSize="11.5dp"
+                android:lineSpacingExtra="-3dp"
+                android:textColor="#fff"
+                android:gravity="bottom|center"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/buttonProiectNou"
+                android:background="@android:color/transparent"
+                style="@android:style/Widget.TextView"
+                android:text="Proiect Nou" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="431dp"
+            android:background="#747475"
+            android:id="@+id/proiect_side_dosar">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_centerInParent="false"
+                android:tint="#fff"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_folder_black_24dp"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="2dp"
+                android:textSize="11.5dp"
+                android:lineSpacingExtra="-3dp"
+                android:textColor="#fff"
+                android:gravity="bottom|center"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/buttonDosarNou"
+                android:background="@android:color/transparent"
+                style="@android:style/Widget.TextView"
+                android:text="Dosar   Nou" />
+
+        </RelativeLayout>
+
+
+        <!-- TEXT BUTOANE -->
+            <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="21.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/InboxButon"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Inbox" />
+
+            <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="71.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/ProiectButon"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Proiecte" />
+
+            <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="121.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#747475"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/AgendaButon"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Agendă" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="171.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#747475"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/EconomiiButton"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Economii" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="221.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#747475"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/EmotionalButton"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Emoțional" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="271.5dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#747475"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/MarketingButton"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Marketing" />
+
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="53dp"
+            android:paddingBottom="2dp"
+            android:textSize="12dp"
+            android:textColor="#747475"
+            android:gravity="bottom|center"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/CautaButton"
+            android:background="@android:color/transparent"
+            style="@android:style/Widget.TextView"
+            android:text="Caută"
+            android:layout_below="@+id/MarketingButton"
+            android:layout_alignStart="@+id/MarketingButton" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V-Intel"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textView"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/cororVIntel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proiecte_content"
+        android:layout_below="@+id/InboxTrasparent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="-20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_side">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/side_text"
+            android:text="Proiecte"
+            android:textSize="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="7dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_horiz_black_24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:tint="#747475"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_nav"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/side_text_nav"
+                android:text="Proiecte"
+                android:textSize="20dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/side_back_header"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="67dp"
+                android:tint="#747475"/>
+        </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/side_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="155dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="70dp"
+        android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

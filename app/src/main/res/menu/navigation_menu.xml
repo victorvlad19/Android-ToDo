@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/inbox"
+            app:actionLayout="@layout/sidebar_inbox" android:checked="false"  android:checkableBehavior="single" />
+
+        <item
+            android:id="@+id/prioritys"
+            app:actionLayout="@layout/sidebar_prioritati" android:checked="false"  android:checkableBehavior="single" />
+
+        <item
+            android:id="@+id/tags"
+            app:actionLayout="@layout/sidebar_etichete" android:checked="false"  android:checkableBehavior="single" />
+
+    </group>
+
+</menu>
+

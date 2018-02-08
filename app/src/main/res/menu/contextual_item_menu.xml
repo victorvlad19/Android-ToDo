@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shehabic.droppy_samples.MainActivity">
+    <group android:enabled="true">
+        <item
+            android:id="@+id/editeazaside"
+            android:title="  Schimba Titlu"
+            />
+
+        <item
+            android:id="@+id/stergeside"
+            android:title="  Muta"
+            />
+    </group>
+
+</menu>

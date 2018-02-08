@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_categorie"
+            icon="@drawable/ic_storage"
+            title="Categorie" />
+        <tab
+            id="@+id/tab_todo"
+            icon="@drawable/ic_check_circle_black_24dp"
+            title="ToDo" />
+        <tab
+            id="@+id/tab_nota"
+            icon="@drawable/ic_note"
+            title="Nota" />
+        <tab
+            id="@+id/tab_audio"
+            icon="@drawable/ic_audiotrack_black_24dp"
+            title="Audio" />
+        <tab
+            id="@+id/tab_camera"
+            icon="@drawable/ic_camera_alt_black_24dp"
+            title="Camera" />
+        <tab
+            id="@+id/tab_mindmap"
+            icon="@drawable/scale"
+            title="Bani" />
+    </tabs>
+
+</PreferenceScreen>

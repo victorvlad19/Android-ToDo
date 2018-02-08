@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_remake"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rounded_down_corners_bg"
+    tools:showIn="@layout/activity_main">
+
+<RelativeLayout
+    android:layout_width="40dp"
+    android:layout_height="8dp"
+    android:background="@drawable/drager"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp">
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+        <include layout="@layout/bottom_buttons" />
+
+        <ImageButton
+            android:id="@+id/enter_note_remake"
+            android:layout_width="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="46dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="13dp"
+            android:paddingRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_advance_circular_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_tools_bottom"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/note_selection_text" />
+    </RelativeLayout>
+
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/note_title_remake"
+    android:textSize="18dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="20dp"
+    android:background="@android:color/transparent"
+    android:fontFamily="sans-serif-medium"
+    android:inputType="textCapSentences"
+    android:textColorHint="#000"
+    android:hint="Titlu"/>
+
+
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:id="@+id/editor"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/note_title_remake"
+            android:layout_alignStart="@+id/note_title_remake"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp">
+        </jp.wasabeef.richeditor.RichEditor>
+
+
+
+</RelativeLayout>

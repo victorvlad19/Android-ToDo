@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="45dp"
+    android:background="#fff">
+
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:gravity="center"
+            android:id="@+id/bageItem"
+            android:textSize="12dp"
+            android:background="@drawable/corner_all"
+            android:textColor="#747475"
+            android:padding="1.5dp"
+            android:layout_marginStart="160dp"
+            android:layout_alignBaseline="@+id/sidebar_item_name"
+            android:layout_alignBottom="@+id/sidebar_item_name" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/iconItem_play"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:id="@+id/sidebar_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="name"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/iconItem_play"
+        android:layout_alignStart="@+id/iconItem_play"
+        android:layout_marginStart="35dp" />
+
+
+
+
+
+
+</android.widget.RelativeLayout>

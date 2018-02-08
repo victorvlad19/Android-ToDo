@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shehabic.droppy_samples.MainActivity">
+    <group android:enabled="true">
+        <item
+            android:id="@+id/bottom_move"
+            android:title="Muta in alt proiect"
+            android:icon="@drawable/ic_arrow_forward_black_24dp"
+            />
+
+        <item
+            android:id="@+id/bottom_copy"
+            android:title="Copiza titlul"
+            android:icon="@drawable/ic_content_copy_black_24dp"
+            />
+
+        <item
+            android:id="@+id/bottom_calendar"
+            android:title="Seteaza data in calendar"
+            android:icon="@drawable/ic_access_alarm_black_24dp"
+            />
+
+        <item
+            android:id="@+id/bottom_eticjete"
+            android:title="Adauga etichete"
+            android:icon="@drawable/ic_label_outline_black_24dp"
+            />
+
+        <item
+            android:id="@+id/bottom_prio"
+            android:title="Seteaza prioritatea"
+            android:icon="@drawable/ic_priority_high_black_24dp"
+            />
+
+        <item
+            android:id="@+id/bottom_bani"
+            android:title="Steaza pretul"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            />
+
+    </group>
+
+</menu>

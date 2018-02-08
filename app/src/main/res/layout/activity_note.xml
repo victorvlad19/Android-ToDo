@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vves.workshop12.NoteActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:id="@+id/rootnote">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/navigation_bar_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </include>
+
+        <EditText
+            android:id="@+id/myTextImputNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_marginTop="65dp"
+            android:paddingTop="0dp"
+            android:paddingRight="17dp"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="#ffffff"
+            android:hint="La ce nota te gandesti ?"
+            android:inputType="textMultiLine|textCapSentences"
+            android:paddingLeft="17dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="45dp"
+            android:scrollbars = "vertical"
+            android:layout_alignParentStart="true" />
+
+        <!-- Text Imput START Here -->
+        <RelativeLayout
+            android:id="@+id/textimput"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+
+            android:layout_alignParentBottom="true">
+
+            <GridLayout
+                android:id="@+id/myRectangleView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff"
+                android:numColumns="4"
+                android:paddingLeft="14dp"
+                android:paddingTop="6dp"
+
+                >
+
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/categorytext"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:si_animation_duration="500"
+                    app:si_disabled_color="#000000"
+                    app:si_enabled="false"
+                    android:padding="3dp"
+                    app:si_no_dash="true"
+                    android:background="@drawable/corner_left"
+                    app:si_tint_color="#000"
+                    app:srcCompat="@drawable/ic_storage" />
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/todotext"
+                    android:layout_width="40dp"
+                    android:background="#f5f5f5"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content"
+                    app:si_animation_duration="500"
+                    app:si_disabled_color="#000000"
+                    app:si_enabled="false"
+                    app:si_no_dash="true"
+                    app:si_tint_color="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_check_circle_black_24dp" />
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/notetextview"
+                    android:layout_width="40dp"
+                    android:padding="3dp"
+                    android:background="@drawable/corner_right"
+                    android:layout_height="wrap_content"
+                    app:si_animation_duration="500"
+                    app:si_disabled_color="#000000"
+                    app:si_enabled="true"
+                    app:si_no_dash="true"
+
+                    app:si_tint_color="@color/colorNote"
+                    app:srcCompat="@drawable/ic_note" />
+
+                <ImageButton
+                    android:id="@+id/tag"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="6dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_label_outline_black_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/priority"
+                    android:layout_width="40dp"
+                    android:paddingTop="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_priority_high_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/duedate"
+                    android:layout_width="40dp"
+                    android:paddingTop="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_access_alarm_black_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/enter"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="46dp"
+                    android:paddingTop="3dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_advance_circular_button" />
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+        <!-- Text Imput END Here -->
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:id="@+id/myRectangleView"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:background="#ffffff"
+    android:numColumns="4"
+    android:paddingLeft="14dp"
+    android:paddingTop="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/categorytext"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:si_animation_duration="500"
+        app:si_disabled_color="#000000"
+        app:si_enabled="false"
+        android:padding="3dp"
+        app:si_no_dash="true"
+        android:background="@drawable/corner_left"
+        app:si_tint_color="#000"
+        app:srcCompat="@drawable/ic_storage" />
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/todotext"
+        android:layout_width="40dp"
+        android:background="#f5f5f5"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        app:si_animation_duration="500"
+        app:si_disabled_color="#000000"
+        app:si_enabled="false"
+        app:si_no_dash="true"
+        app:si_tint_color="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_check_circle_black_24dp" />
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/notetextview"
+        android:layout_width="40dp"
+        android:padding="3dp"
+        android:background="@drawable/corner_right"
+        android:layout_height="wrap_content"
+        app:si_animation_duration="500"
+        app:si_disabled_color="#000000"
+        app:si_enabled="true"
+        app:si_no_dash="true"
+
+        app:si_tint_color="@color/colorNote"
+        app:srcCompat="@drawable/ic_note" />
+
+    <ImageButton
+        android:id="@+id/tag"
+        android:paddingTop="3dp"
+        android:paddingLeft="6dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_label_outline_black_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/priority"
+        android:layout_width="40dp"
+        android:paddingTop="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_priority_high_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/duedate"
+        android:layout_width="40dp"
+        android:paddingTop="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_access_alarm_black_24dp" />
+
+
+
+
+</GridLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#31b1ff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorNote">#e95505</color>
+    <color name="colorShadow">#777777</color>
+    <color name="colorToolbar">#b4dcff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#d50000</color>
+    <color name="cororVIntel">#0088fe</color>
+    <color name="cororVIntel_1">#037de7</color>
+    <color name="colorVIntelStatusBar">#006ecf</color>
+    <color name="colorNoteBg">#fafafa</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="colorOverlay">#78ffffff</color>
+    <color name="colorBarDimed">#003665</color>
+</resources>

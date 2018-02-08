@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:left_swipe_enabled="true"
+    android:id="@+id/swiped_layout_side"
+    app:right_swipe_enabled="true">
+
+
+    <!--LEFT-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:gravity="left"
+        app:bring_to_clamp="no"
+        app:clamp="155dp"
+        app:sticky="155dp">
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:id="@+id/muta"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:id="@+id/edit_side"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp_1"
+
+                android:tint="#686868"
+                android:paddingBottom="12dp"
+                android:paddingLeft="0dp"
+                android:id="@+id/arhive"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editeaza"
+                android:textColor="#686868"
+                android:textSize="12dp"
+                android:layout_marginTop="-14dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/arhive" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_toStartOf="@id/muta">
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/sterge_side"
+                android:layout_height="match_parent"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                android:tint="@color/colorRed"
+                android:id="@+id/trash"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingRight="31.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterge"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                android:paddingRight="26.5dp"
+                android:layout_marginTop="-14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/trash"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp"
+    android:id="@+id/projcontent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/handleside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:minHeight="40dp"
+        android:tint="#000"
+        android:src="@drawable/ic_drag_handle_black_24dp"
+        android:layout_centerVertical="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    <Button
+        android:id="@+id/sidebar_item_project_name"
+        android:minHeight="0dp"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:text="name"
+        android:background="@android:color/transparent"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_marginLeft="34dp"
+        android:textStyle="bold"
+
+        style="@android:style/Widget.TextView" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/folder_over"
+        android:minHeight="40dp"
+        android:background="#FFF5F5F5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/handleside1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:tint="#000"
+            android:src="@drawable/ic_drag_handle_black_24dp"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/handleside2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:tint="#000"
+            android:src="@drawable/ic_folder_open_black_24dp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:minHeight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:text="Adauga "
+            android:layout_marginStart="63dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            android:textAllCaps="false"
+            android:layout_marginLeft="34dp"
+            android:textStyle="bold"
+            style="@android:style/Widget.TextView" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+</ru.rambler.libs.swipe_layout.SwipeLayout>

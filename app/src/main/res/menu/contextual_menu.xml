@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Remove all items" android:id="@+id/context1" />
+    <item android:title="Check all items"  android:id="@+id/context2" />
+    <item android:title="New Note View - Beta"    android:id="@+id/context3" />
+</menu>
